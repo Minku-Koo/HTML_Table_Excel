@@ -239,7 +239,7 @@ class Table_Excel(object):
                 rows = row
             
         head =0
-        if (row-2, col) in isHeader: # 해당 셀이 헤더일 경우
+        if (row-2, col) in isHeader: # 해당 셀이 헤더일 경우 
             head =1
             
         return abs_cell_count, head, row, col, rows, cols
