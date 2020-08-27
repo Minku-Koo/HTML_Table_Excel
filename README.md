@@ -45,3 +45,18 @@ TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 
 
 
+** 예시 Example **
+
+- Absorption Excel View
+ <Example 1>
+ ![rltkdcjd](https://user-images.githubusercontent.com/25974226/91434845-5cf20e00-e8a0-11ea-9ef7-27b55dc51401.PNG)
+ 
+ <Example 2>
+ ![dltkdgksxpdlqmf](https://user-images.githubusercontent.com/25974226/91434909-772bec00-e8a0-11ea-81d5-c6347a9cb743.PNG)
+
+
+
+ - Separation Excel View
+![rltkdcjd1](https://user-images.githubusercontent.com/25974226/91434958-8b6fe900-e8a0-11ea-9bb7-20bce39cfcc0.PNG)
+
+
