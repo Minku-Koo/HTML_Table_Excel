@@ -10,16 +10,20 @@ Scrapping HTML Table and Input a Table Data to Excel
 - Version : 1.0
 - Keywords : 'Excel', 'Table', 'HTML', 'Crawling', 'Selenium', 'Extractor'
 
- * How to Use? *
+ * How to Use?
  
 TableExcel = Table_Excel( URL_list <type=(String)list>, ChromeDriver Path <type=String>)
 TableExcel.makeExel_abs( Excel File Path <type=String>, Table Header Color by Hex <type=String> (Default=F8E0EC) )
 TableExcel.makeExel_sep( Excel File Path <type=String> )
 
 
+
+
  * Please, Import these Library : HTML_Table_Extractor, BeautifulSoup4, openpyxl, time, selenium
  * You should check your ChromeDriver exist
  * Also, You have to check, that your Chrome Version and your ChromeDriver version is same
+
+----------------------------------------------------------------------------------------------------------------------------
 
 
 HTML의 table 태그의 데이터를 수집 및 변형하여 Excel 파일로 만들어주는 라이브러리 입니다.
@@ -27,8 +31,13 @@ HTML의 table 태그의 데이터를 수집 및 변형하여 Excel 파일로 만
 해당 웹 페이지의 모든 테이블을 수직으로 정렬시켜 표시합니다.
 각 테이블의 헤더는 색을 달리하여 표시해줍니다.
 
+
+
 ** 사용법 **
 
 TableExcel = Table_Excel( URL <리스트>, 크롬 드라이버 경로 <문자열>)
 TableExcel.makeExel_abs( 엑셀 파일 경로 <문자열>, 테이블 헤더 색깔 - 16진수 <문자열> (Default=F8E0EC) )
 TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
+
+
+
