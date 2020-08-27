@@ -48,21 +48,34 @@ TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 
 
 
-
+----------------------------------------------------------------------------------------------------------------------------
 ** 예시 Example **
 
 
-- Absorption Excel View
+## Absorption Excel View ##
 
 <Example 1>
+
+- web page
+![rl1](https://user-images.githubusercontent.com/25974226/91436990-1acacb80-e8a4-11ea-9f0b-89874406c723.PNG)
+
+- excel sheet
 ![rltkdcjd](https://user-images.githubusercontent.com/25974226/91434845-5cf20e00-e8a0-11ea-9ef7-27b55dc51401.PNG)
  
+ 
+ 
 <Example 2>
+
+- web page
+![rl2](https://user-images.githubusercontent.com/25974226/91436997-1c948f00-e8a4-11ea-8461-1f1eaab75dc1.PNG)
+
+- excel sheet
 ![dltkdgksxpdlqmf](https://user-images.githubusercontent.com/25974226/91434909-772bec00-e8a0-11ea-81d5-c6347a9cb743.PNG)
 
 
 
-- Separation Excel View
+## Separation Excel View ##
+
 ![rltkdcjd1](https://user-images.githubusercontent.com/25974226/91434958-8b6fe900-e8a0-11ea-9bb7-20bce39cfcc0.PNG)
 
 
