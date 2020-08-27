@@ -13,7 +13,9 @@ Scrapping HTML Table and Input a Table Data to Excel
  * How to Use?
  
 TableExcel = Table_Excel( URL_list <type=(String)list>, ChromeDriver Path <type=String>)
+
 TableExcel.makeExel_abs( Excel File Path <type=String>, Table Header Color by Hex <type=String> (Default=F8E0EC) )
+
 TableExcel.makeExel_sep( Excel File Path <type=String> )
 
 
@@ -36,7 +38,9 @@ HTML의 table 태그의 데이터를 수집 및 변형하여 Excel 파일로 만
 ** 사용법 **
 
 TableExcel = Table_Excel( URL <리스트>, 크롬 드라이버 경로 <문자열>)
+
 TableExcel.makeExel_abs( 엑셀 파일 경로 <문자열>, 테이블 헤더 색깔 - 16진수 <문자열> (Default=F8E0EC) )
+
 TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 
 
