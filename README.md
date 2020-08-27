@@ -31,10 +31,10 @@ TableExcel.makeExel_sep( Excel File Path <type=String> )
 
 
 
-HTML의 table 태그의 데이터를 수집 및 변형하여 Excel 파일로 만들어주는 라이브러리 입니다.
-엑셀 파일에는 링크, 페이지 제목이 포함되어 있습니다.
-해당 웹 페이지의 모든 테이블을 수직으로 정렬시켜 표시합니다.
-각 테이블의 헤더는 색을 달리하여 표시해줍니다.
+- HTML의 table 태그의 데이터를 수집 및 변형하여 Excel 파일로 만들어주는 라이브러리 입니다.
+- 엑셀 파일에는 링크, 페이지 제목이 포함되어 있습니다.
+- 해당 웹 페이지의 모든 테이블을 수직으로 정렬시켜 표시합니다.
+- 각 테이블의 헤더는 색을 달리하여 표시해줍니다.
 
 
 
@@ -54,15 +54,15 @@ TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 
 - Absorption Excel View
 
- <Example 1>
- ![rltkdcjd](https://user-images.githubusercontent.com/25974226/91434845-5cf20e00-e8a0-11ea-9ef7-27b55dc51401.PNG)
+<Example 1>
+![rltkdcjd](https://user-images.githubusercontent.com/25974226/91434845-5cf20e00-e8a0-11ea-9ef7-27b55dc51401.PNG)
  
- <Example 2>
- ![dltkdgksxpdlqmf](https://user-images.githubusercontent.com/25974226/91434909-772bec00-e8a0-11ea-81d5-c6347a9cb743.PNG)
+<Example 2>
+![dltkdgksxpdlqmf](https://user-images.githubusercontent.com/25974226/91434909-772bec00-e8a0-11ea-81d5-c6347a9cb743.PNG)
 
 
 
- - Separation Excel View
+- Separation Excel View
 ![rltkdcjd1](https://user-images.githubusercontent.com/25974226/91434958-8b6fe900-e8a0-11ea-9bb7-20bce39cfcc0.PNG)
 
 
