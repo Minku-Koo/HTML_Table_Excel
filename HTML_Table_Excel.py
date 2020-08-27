@@ -225,6 +225,7 @@ class Table_Excel(object):
         abs_cell_count = None # 병합해야할 셀의 개수 
         rows, cols = 0,0 # 현재 셀에서 병합해야할 목적이 되는 셀
         
+        # row에서 2를 빼는 이유 : 엑셀 1, 2 라인에 URL, TITLE 정보를 입력했기 때문
         if (row-2, col) in cell_abs: # rowspan or colspan이 있는 경우
             
             indx = cell_abs.index( (row-2, col) )
@@ -275,14 +276,14 @@ class Table_Excel(object):
             for i in data: #셋째줄부터 아래로 테이블 정보 입력
                 sheet.append(i)
                 
-            for aa in sheet: #모든 셀을 비교하며 병합 또는 헤더 판단
-                for s in aa:
-                    delcount, head, row, col, rows, cols = self.cell_merge(s, absorption, isHeader)
+            for line in sheet: #모든 셀을 비교하며 병합 또는 헤더 판단
+                for cel in line:
+                    delcount, head, row, col, rows, cols = self.cell_merge(cel, absorption, isHeader)
                     if head ==1: #헤더일 경우
                         # cell color 변경 
                         sheet.cell(row=row, column=col).fill = PatternFill(start_color=color, end_color=color, fill_type='solid')
                         # cell border 변경
-                        sheet.cell(row=s.row, column = s.column).border = self.thin_border
+                        sheet.cell(row=cel.row, column = cel.column).border = self.thin_border
                     if delcount == None: #병합할 셀이 없는 경우
                         continue
                     #셀 병합
