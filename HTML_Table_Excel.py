@@ -17,7 +17,7 @@ TableExcel = Table_Excel( URL_list <type=(String)list>, ChromeDriver Path <type=
 TableExcel.makeExel_abs( Excel File Path <type=String>, Table Header Color by Hex <type=String> (Default=F8E0EC) )
 TableExcel.makeExel_sep( Excel File Path <type=String> )
 
- * Please, Import these Library : HTML_Table_Extractor, BeautifulSoup4, openpyxl, time, selenium
+ * Please, Import these Library : BeautifulSoup4, openpyxl, time, selenium
  * You should check your ChromeDriver exist
  * Also, You have to check, that your Chrome Version and your ChromeDriver version is same
 '''
@@ -190,7 +190,7 @@ class Table_Excel(object):
         
         self.headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '}
         
-        options = webdriver.ChromeOptions()
+        options = webdriver.ChromeOptions() #크름 드라이버를 보이지 않게 하기 위한 option 추가
         options.add_argument('headless')
         options.add_argument('--disable-gpu')
         options.add_argument('lang=ko_KR')
