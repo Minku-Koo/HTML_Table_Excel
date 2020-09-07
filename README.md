@@ -38,6 +38,12 @@ TableExcel.makeExel_sep( Excel File Path <type=String> )
 - 각 테이블의 헤더는 색을 달리하여 표시해줍니다.
 
 
+
+- makeExel_sep() 함수는 테이블을 그대로 보여줍니다. rowspan, colspan에서 병합이 이루어지지 않습니다.
+- makeExel_abs() 함수는 테이블의 병합을 그대로 구현합니다. rowspan, colspan의 병합이 엑셀에서도 동일하게 이루어집니다.
+
+
+
 - Simple Version은 단순히 웹 페이지 내의 테이들을 새로로 정렬시켜줍니다.
 - Original Version은 중복 테이블, 가로 정렬 테이블도 모두 표시해줍니다.
 - 필요한 Version의 py 파일을 받아서 사용하실 수 있습니다.
