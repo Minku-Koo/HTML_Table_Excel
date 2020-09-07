@@ -103,6 +103,7 @@ class Extractor(object):
         row_reit = 0 # 중첩된 테이블 개수를 판단하여,, 엑셀에 row를 조정하기 위한 계산
         innerTable = [] # 중첩된 테이블 리스트
         indiv_table = 0 # 중첩되지 않고, 가장 바깥쪽 테이블 count
+        prev_table_soup = None # 이전 테이블 태그 존재 여부
         
         for tab in self._table.find_all("table"): # 엑셀에서 테이블 간격 주기 위함 - 한 줄 띄움
             # self.table_count = 1
@@ -112,11 +113,28 @@ class Extractor(object):
                 isSameParents = True
             else: self._xpath = tag_path #독립된 부모 태그일 경우
             
+            #가로 정렬 테이블인지 판단
+            temp_row = 0
+            if isSameParents:
+                for rw in tab.find_all('tr'): #테이블 세로값 검사
+                    for cell in row.children:
+                        if cell.name in ('td', 'th'):
+                            temp_row += int(cell.get('rowspan')) if cell.get('rowspan') else 1
+                
+                if tr_count != temp_row: # 테이블 세로값이 다를 경우, 가로 정렬 아님
+                    isSameParents = False
+            
+                # 이전 테그가 테이블일 경우, 가로 정렬 테이블로 판단
+                prev_table = tab.find_previous_sibling() #이전 태그 추출
+                #이전 태그가 없거나, 테이블 태그가 아니면 가로정렬 아닌걸로 판단
+                if prev_table == None or prev_table.name != "table":
+                    isSameParents = False
+            
             reit = tag_path.count('table')+1 # xpath를 통해 테이블이 중첩인지 판단, 중첩 단계 판별
             if tag_path.count('table') == 0: # 테이블이 중첩되지 않은 테이블일 경우, 값 초기화
                 reit =1
-                row_reit=0
                 row_ind -= row_reit
+                row_reit=0
                 indiv_table += 1 # 개별 테이블의 번호는 높여줌
                 self.table_count=0
             
