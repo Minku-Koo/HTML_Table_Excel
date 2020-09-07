@@ -38,10 +38,16 @@ TableExcel.makeExel_sep( Excel File Path <type=String> )
 - 각 테이블의 헤더는 색을 달리하여 표시해줍니다.
 
 
+- Simple Version은 단순히 웹 페이지 내의 테이들을 새로로 정렬시켜줍니다.
+- Original Version은 중복 테이블, 가로 정렬 테이블도 모두 표시해줍니다.
+- 필요한 Version의 py 파일을 받아서 사용하실 수 있습니다.
 
 
 # 사용법
  ```
+ from HTML_Table_Excel import Table_Excel
+ (from HTML_Table_Excel_simple import Table_Excel)
+ 
 TableExcel = Table_Excel( URL <리스트>, 크롬 드라이버 경로 <문자열>)
 TableExcel.makeExel_abs( 엑셀 파일 경로 <문자열>, 테이블 헤더 색깔 - 16진수 <문자열> (Default=F8E0EC) )
 TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
