@@ -5,9 +5,10 @@ Scrapping HTML Table and Input a Table Data to Excel
 
 - Library Name : Table_Excel
 - Created Date : 27/Aug/2020
+- Updated Date : 07/Sep/2020
 - Author : Minku Koo
 - E-Mail : corleone@kakao.com
-- Version : 1.0
+- Version : 1.1.3
 - Keywords : 'Excel', 'Table', 'HTML', 'Crawling', 'Selenium', 'Extractor'
 
 
@@ -49,7 +50,7 @@ TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 
 
 ----------------------------------------------------------------------------------------------------------------------------
-## 예시 Example 
+## 예시 Example 1 (Simple, Version 1.0.0)
 
 
 - Absorption Excel View
@@ -83,3 +84,28 @@ TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 ![rltkdcjd1](https://user-images.githubusercontent.com/25974226/91434958-8b6fe900-e8a0-11ea-9bb7-20bce39cfcc0.PNG)
 
 
+----------------------------------------------------------------------------------------------------------------------------
+
+## 예시 Example 2 (Original, Version 1.1.3)
+
+- 가로로 정렬된 개별 테이블을 하나의 테이블처럼 표시할 수 있습니다.
+
+@web page
+
+![2-1](https://user-images.githubusercontent.com/25974226/92365679-1ff30a80-f12f-11ea-9502-1a75d490c282.PNG)
+
+@excel sheet
+
+![2-2](https://user-images.githubusercontent.com/25974226/92365684-22556480-f12f-11ea-837b-3f814c56b4d6.PNG)
+
+
+
+- 테이블 안에 중첩된 테이블을 별도로 표시할 수 있습니다.
+
+@web page
+
+![7-1](https://user-images.githubusercontent.com/25974226/92365689-24b7be80-f12f-11ea-82c7-6833d08ce0eb.PNG)
+
+@excel sheet
+
+![7-2](https://user-images.githubusercontent.com/25974226/92365692-25e8eb80-f12f-11ea-8ae5-2fa477379e9a.PNG)
