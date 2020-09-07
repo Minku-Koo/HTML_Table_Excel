@@ -5,9 +5,10 @@ Scrapping HTML Table and Input a Table Data to Excel
 
 - Library Name : Table_Excel
 - Created Date : 27/Aug/2020
+- Updated Date : 07/Sep/2020
 - Author : Minku Koo
 - E-Mail : corleone@kakao.com
-- Version : 1.0
+- Version : 1.1.3
 - Keywords : 'Excel', 'Table', 'HTML', 'Crawling', 'Selenium', 'Extractor'
 
 
@@ -49,7 +50,7 @@ TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 
 
 ----------------------------------------------------------------------------------------------------------------------------
-## 예시 Example 
+## 예시 Example (Version 1.0.0)
 
 
 - Absorption Excel View
