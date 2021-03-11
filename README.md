@@ -5,49 +5,40 @@ Scrapping HTML Table and Input a Table Data to Excel
 
 - Library Name : Table_Excel
 - Created Date : 27/Aug/2020
-- Updated Date : 07/Sep/2020
+- Updated Date : 11/Mar/2021
 - Author : Minku Koo
 - E-Mail : corleone@kakao.com
-- Version : 1.1.3
+- Version : 1.1.4
 - Keywords : 'Excel', 'Table', 'HTML', 'Crawling', 'Selenium', 'Extractor'
 
 
 
 # How to Use?
  ```
+from HTML_Table_Excel import Table_Excel
+
 TableExcel = Table_Excel( URL_list <type=(String)list>, ChromeDriver Path <type=String>)
 TableExcel.makeExel_abs( Excel File Path <type=String>, Table Header Color by Hex <type=String> (Default=F8E0EC) )
 TableExcel.makeExel_sep( Excel File Path <type=String> )
 ```
 
 
-
-
-
- * Please, Import these Library : HTML_Table_Extractor, BeautifulSoup4, openpyxl, time, selenium
- * You should check your ChromeDriver exist
- * Also, You have to check, that your Chrome Version and your ChromeDriver version is same
+ * You should check your ChromeDriver version
+ * Also, You have to check, that your Chrome Browser Version and your ChromeDriver version is same
 
 ----------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------
 
 
-- HTML의 table 태그의 데이터를 수집 및 변형하여 Excel 파일로 만들어주는 라이브러리 입니다.
+- HTML table 태그의 데이터를 수집 및 변형하여 Excel 파일로 만들어주는 라이브러리 입니다.
 - 엑셀 파일에는 링크, 페이지 제목이 포함되어 있습니다.
 - 해당 웹 페이지의 모든 테이블을 수직으로 정렬시켜 표시합니다.
 - 각 테이블의 헤더는 색을 달리하여 표시해줍니다.
 
 
-
 - makeExel_sep() 함수는 테이블을 그대로 보여줍니다. rowspan, colspan에서 병합이 이루어지지 않습니다.
 - makeExel_abs() 함수는 테이블의 병합을 그대로 구현합니다. rowspan, colspan의 병합이 엑셀에서도 동일하게 이루어집니다.
-
-
-
-- Simple Version은 단순히 웹 페이지 내의 테이들을 새로로 정렬시켜줍니다.
-- Original Version은 중복 테이블, 가로 정렬 테이블도 모두 표시해줍니다.
-- 필요한 Version의 py 파일을 받아서 사용하실 수 있습니다.
-
+- 중첩 테이블, 가로 정렬 테이블도 모두 표시해줍니다.
 
 # 사용법
  ```
