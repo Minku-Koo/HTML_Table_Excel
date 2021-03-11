@@ -1,8 +1,9 @@
 # HTML_Table_Excel
-Scrapping HTML Table and Input a Table Data to Excel
+## Extract HTML Table and Input a Table Data to Excel
+
+
 
 - This Library apply HTML_Table_Extractor
-
 - Library Name : Table_Excel
 - Created Date : 27/Aug/2020
 - Updated Date : 11/Mar/2021
