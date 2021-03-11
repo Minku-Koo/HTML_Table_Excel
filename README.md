@@ -50,65 +50,59 @@ TableExcel.makeExel_abs( 엑셀 파일 경로 <문자열>, 테이블 헤더 색�
 TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 ```
 
-
-
 ----------------------------------------------------------------------------------------------------------------------------
-## 예시 Example 1 (Simple, Version 1.0.0)
-
-
-- Absorption Excel View
-
-<Example 1>
-
-@web page
-
-![rl1](https://user-images.githubusercontent.com/25974226/91436990-1acacb80-e8a4-11ea-9f0b-89874406c723.PNG)
-
-@excel sheet
-
-![rltkdcjd](https://user-images.githubusercontent.com/25974226/91434845-5cf20e00-e8a0-11ea-9ef7-27b55dc51401.PNG)
- 
- 
- 
-<Example 2>
-
-@web page
-
-![rl2](https://user-images.githubusercontent.com/25974226/91436997-1c948f00-e8a4-11ea-8461-1f1eaab75dc1.PNG)
-
-@excel sheet
-
-![dltkdgksxpdlqmf](https://user-images.githubusercontent.com/25974226/91434909-772bec00-e8a0-11ea-81d5-c6347a9cb743.PNG)
-
-
-
-- Separation Excel View
-
-![rltkdcjd1](https://user-images.githubusercontent.com/25974226/91434958-8b6fe900-e8a0-11ea-9bb7-20bce39cfcc0.PNG)
-
-
 ----------------------------------------------------------------------------------------------------------------------------
+# Here is Examples
 
-## 예시 Example 2 (Original, Version 1.1.3)
-
-- 가로로 정렬된 개별 테이블을 하나의 테이블처럼 표시할 수 있습니다.
-
-@web page
-
-![2-1](https://user-images.githubusercontent.com/25974226/92365679-1ff30a80-f12f-11ea-9502-1a75d490c282.PNG)
-
-@excel sheet
-
-![2-2](https://user-images.githubusercontent.com/25974226/92365684-22556480-f12f-11ea-837b-3f814c56b4d6.PNG)
+## Sample 1 (What is different between makeExel_sep() and makeExel_abs()?)
+(URL : https://www.weather.go.kr/weather/observation/currentweather.jsp)
 
 
+* **Web Page**
+![weather-web2](https://user-images.githubusercontent.com/25974226/110779854-60cb0800-82a7-11eb-8571-faefdcbe8316.PNG)
 
-- 테이블 안에 중첩된 테이블을 별도로 표시할 수 있습니다.
+* **Table_Excel -> makeExel_sep()**
+![seq-weather2](https://user-images.githubusercontent.com/25974226/110779541-ffa33480-82a6-11eb-9fce-b2911b81a371.PNG)
 
-@web page
+* **Table_Excel -> makeExel_abs()**
+![abs-weather2](https://user-images.githubusercontent.com/25974226/110779532-fd40da80-82a6-11eb-9ebc-8ad580711d0d.PNG)
 
-![7-1](https://user-images.githubusercontent.com/25974226/92365689-24b7be80-f12f-11ea-82c7-6833d08ce0eb.PNG)
 
-@excel sheet
+## Sample 2 (How about Table in table or horizontal arangement tables?)
+(URL : http://www.kweather.co.kr/kma/kma_digital.html)
 
-![7-2](https://user-images.githubusercontent.com/25974226/92365692-25e8eb80-f12f-11ea-8ae5-2fa477379e9a.PNG)
+
+* **Web Page**
+![weather-web](https://user-images.githubusercontent.com/25974226/110779543-ffa33480-82a6-11eb-9f6e-8bc7a1c1d682.PNG)
+
+* **Table_Excel -> makeExel_abs()**
+![abs-weather](https://user-images.githubusercontent.com/25974226/110779549-00d46180-82a7-11eb-9e4e-3d1365a4a725.PNG)
+
+
+## Sample 3 (Table in table case)
+(path : ./sample_html/innerTable_Sample.html)
+
+
+* **HTML**
+![inner-html](https://user-images.githubusercontent.com/25974226/110779538-ff0a9e00-82a6-11eb-9853-1df9b37610fb.PNG)
+
+* **Table_Excel -> makeExel_abs()**
+
+![abs-html](https://user-images.githubusercontent.com/25974226/110779544-003bcb00-82a7-11eb-95ea-e3c128921fb0.PNG)
+
+
+
+## Sample 4 (Horizontal arangement tables case)
+(path : ./sample_html/horizontal_table_sample.html)
+
+
+* **HTML**
+
+![horizon-html](https://user-images.githubusercontent.com/25974226/110779536-fe720780-82a6-11eb-8865-a09c57adc256.PNG)
+
+
+* **Table_Excel -> makeExel_abs()**
+
+![abs-html2](https://user-images.githubusercontent.com/25974226/110779545-003bcb00-82a7-11eb-8f1a-59d1b30ea7b1.PNG)
+
+
