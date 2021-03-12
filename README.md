@@ -3,7 +3,7 @@
 
 
 
-- This Library apply HTML_Table_Extractor
+- This Library is applied HTML_Table_Extractor
 - Library Name : Table_Excel
 - Created Date : 27/Aug/2020
 - Updated Date : 11/Mar/2021
