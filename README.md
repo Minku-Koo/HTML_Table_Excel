@@ -99,7 +99,7 @@ TableExcel.makeExel_sep( 엑셀 파일 경로 <문자열> )
 *(path : ./sample_html/innerTable_Sample.html)*
 
 
-### 🖥 HTML**
+### 🖥 HTML ###
 ![inner-html](https://user-images.githubusercontent.com/25974226/110779538-ff0a9e00-82a6-11eb-9853-1df9b37610fb.PNG)
 
 ### 🔍 Table_Excel -> makeExel_abs() ###
